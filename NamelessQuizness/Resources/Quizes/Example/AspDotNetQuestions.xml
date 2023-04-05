@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content>
+  
+  <TypingQuestionDef>
+    <DefKey>Question.AspDotNet.1</DefKey>
+    <Text>Напишите название разрабатываемой Microsoft технологии для создания веб-приложений на платформе .Net</Text>
+    <InputMessage>Answer.Typing</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>ASP.NET Core</li>
+      <li>ASP.NET</li>
+      <li>ASP</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.AspDotNet.2</DefKey>
+    <Text>
+      Что middleware не умеет?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Захэндлить входящий HTTP-запрос путем создания HTTP-ответа</Text>
+      </li>
+      <li>
+        <Text>Обработать исходящий HTTP-ответ, изменить его и передать либо другому middleware, либо веб-серверу ASP.NET Core</Text>
+      </li>
+      <li>
+        <Text>Обработать HTTP-запрос, изменить его и передать другой middleware на обработку</Text>
+      </li>
+      <li>
+        <Text>Создать HTTP-запрос для клиента</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+  
+  <PickingQuestionDef>
+    <DefKey>Question.AspDotNet.3</DefKey>
+    <Text>
+      В чем разница между app.Use и app.Run при добавлении middleware?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>app.Use позволяет вызывать следующую middleware в pipeline</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>app.Run не вызывает следующую по списку middleware</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>app.Run также не принимает на вход параметр next</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>app.Run позволяет вызывать следующую middleware в pipeline</Text>
+      </li>
+      <li>
+        <Text>app.Use не вызывает следующую по списку middleware</Text>
+      </li>
+      <li>
+        <Text>app.Use также не принимает на вход параметр next</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.AspDotNet.4</DefKey>
+    <Text>
+      В чем разница между ConfigureServices и Configure в ASP.NET Core?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>ConfigureServices – мы используем тогда, когда нам нужно добавить сервисы и использовать их через интегрированный DI, как пример мы можем добавить EntityFramework в ConfigureServices и использовать его в дальнейшем встраивая через конструктор</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Configure – мы используем для настройки middleware. По сути мы управляем HTTP реквест пайплайном внутри Configure метода</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Configure – мы используем тогда, когда нам нужно добавить сервисы и использовать их через интегрированный DI, как пример мы можем добавить EntityFramework в Configure и использовать его в дальнейшем встраивая через конструктор</Text>
+        <IsCorrectAnswer>False</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>ConfigureServices – мы используем для настройки middleware. По сути мы управляем HTTP реквест пайплайном внутри ConfigureServices метода</Text>
+        <IsCorrectAnswer>False</IsCorrectAnswer>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+  
+  <TypingQuestionDef>
+    <DefKey>Question.AspDotNet.5</DefKey>
+    <Text>В какой папке в ASP.NET Core по умолчанию хранятся все статические ресурсы, такие как CSS, JavaScript?</Text>
+    <InputMessage>Answer.Typing</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>wwwroot</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+  
+  <PickingQuestionDef>
+    <DefKey>Question.AspDotNet.6</DefKey>
+    <Text>
+      К какому типу Lifetime сервиса относится следующее определение?\n
+      При каждом обращении к сервису создается новый объект сервиса. Т.е если в рамках одного реквеста у вас будет несколько обращений к сервису, он будет создан несколько раз
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Transient</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Scoped</Text>
+      </li>
+      <li>
+        <Text>Singleton</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.AspDotNet.7</DefKey>
+    <Text>
+      К какому типу Lifetime сервиса относится следующее определение?\n
+      Для каждого запроса создается свой объект сервиса. То есть если в течение одного запроса есть несколько обращений к одному сервису, то при всех этих обращениях будет использоваться один и тот же объект сервиса
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Transient</Text>
+      </li>
+      <li>
+        <Text>Scoped</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Singleton</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.AspDotNet.8</DefKey>
+    <Text>
+      К какому типу Lifetime сервиса относится следующее определение?\n
+      Объект сервиса создается при первом обращении к нему, все последующие запросы используют один и тот же ранее созданный объект сервиса
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Transient</Text>
+      </li>
+      <li>
+        <Text>Scoped</Text>
+      </li>
+      <li>
+        <Text>Singleton</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+  
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.AspDotNet.9</DefKey>
+    <Text>
+      Content-Generating Middleware - Для отправки ответа прямо внутри middleware. Такие middleware никогда не переходят к следующей по цепочке
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.AspNetWithDotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.AspDotNet.10</DefKey>
+    <Text>
+      Short-Circuiting Middleware – так называют middleware, которые не всегда переходит к следующей Middleware, а по какому-то условию возвращают ответ прямо внутри себя
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.AspNetWithDotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.AspDotNet.11</DefKey>
+    <Text>
+      Request-Editing Middleware – так называют middleware, в которых нам нужно отредактировать запрос, исходящий от клиента
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.AspNetWithDotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.AspDotNet.12</DefKey>
+    <Text>
+      Response-Editing Middleware – так называют middleware, в которых нам нужно отредактировать ответ, возвращаемый клиенту
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.AspNetWithDotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+</Content>

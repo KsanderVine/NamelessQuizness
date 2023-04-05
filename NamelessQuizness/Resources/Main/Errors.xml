@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content>
+  
+  <MessageDef>
+    <DefKey>Error.QuizesNotLoaded</DefKey>
+    <Text>Конфигурация не содержит ни одного определения для викторины!</Text>
+  </MessageDef>
+  
+  <MessageDef>
+    <DefKey>Error.IncorrectGameRendererType</DefKey>
+    <Text>Конфигурация игры содержит некорректный тип IRenderer!</Text>
+  </MessageDef>
+  
+  <MessageDef>
+    <DefKey>Error.IncorrectQuizRendererType</DefKey>
+    <Text>Конфигурация викторины содержит некорректный тип IQuizRenderer!</Text>
+  </MessageDef>
+  
+  <MessageDef>
+    <DefKey>Error.IncorrectQuizProcessorType</DefKey>
+    <Text>Конфигурация викторины содержит некорректный тип IQuizProcessor!</Text>
+  </MessageDef>
+  
+</Content>

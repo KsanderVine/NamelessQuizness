@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content>
+  
+  <TypingQuestionDef>
+    <DefKey>Question.Typing.1</DefKey>
+    <Text>Можно ли хранить разные типы данных в объекте класса System.Array?</Text>
+    <InputMessage>Answer.Binary</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>Да</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+  
+  <TypingQuestionDef>
+    <DefKey>Question.Typing.2</DefKey>
+    <Text>Напишите явное имя параметра, передаваемого в метод set свойства класса?</Text>
+    <InputMessage>Answer.Typing</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>value</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+
+  <TypingQuestionDef>
+    <DefKey>Question.Typing.3</DefKey>
+    <Text>Возможно ли поместить два файла с одинаковым сложным именем в Global Assembly Cache?</Text>
+    <InputMessage>Answer.Binary</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>Нет</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+
+  <TypingQuestionDef>
+    <DefKey>Question.Typing.4</DefKey>
+    <Text>Может ли класс реализовать два интерфейса, у которых объявлены одинаковые методы?</Text>
+    <InputMessage>Answer.Binary</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>Да</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+  
+  <TypingQuestionDef>
+    <DefKey>Question.Typing.5</DefKey>
+    <Text>Можно ли запретить наследование от своего собственного класса?</Text>
+    <InputMessage>Answer.Binary</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>Да</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+
+  <TypingQuestionDef>
+    <DefKey>Question.Typing.6</DefKey>
+    <Text>Можно ли разрешить наследование класса, но запретить переопределение метода?</Text>
+    <InputMessage>Answer.Binary</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>Да</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+
+  <TypingQuestionDef>
+    <DefKey>Question.Typing.7</DefKey>
+    <Text>Напишите название класса .NET, от которого наследуются все классы?</Text>
+    <InputMessage>Answer.Typing</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>System.Object</li>
+      <li>Object</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+
+  <TypingQuestionDef>
+    <DefKey>Question.Typing.8</DefKey>
+    <Text>Наследуются ли переменные с модификатором private?</Text>
+    <InputMessage>Answer.Binary</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>Да</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+
+  <TypingQuestionDef>
+    <DefKey>Question.Typing.9</DefKey>
+    <Text>Какая наименьшая исполнимая единица в .NET?</Text>
+    <InputMessage>Answer.Typing</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>Сборка</li>
+      <li>Assembly</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+
+  <TypingQuestionDef>
+    <DefKey>Question.Typing.10</DefKey>
+    <Text>Можно ли наследовать от нескольких классов?</Text>
+    <InputMessage>Answer.Binary</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>Нет</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+
+  <TypingQuestionDef>
+    <DefKey>Question.Typing.11</DefKey>
+    <Text>Можно ли наследовать от нескольких интерфейсов?</Text>
+    <InputMessage>Answer.Binary</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>Да</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+  
+</Content>

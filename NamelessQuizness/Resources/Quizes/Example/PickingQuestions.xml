@@ -1,0 +1,941 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content>
+  
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.1</DefKey>
+    <Text>
+      var s1 = string.Format("{0}{1}", "abc", "cba");
+      var s2 = "abc" + "cba";
+      var s3 = "abccba";
+
+      Console.WriteLine(s1 == s2);
+      Console.WriteLine((object)s1==(object)s2);
+      Console.WriteLine(s2==s3);
+      Console.WriteLine((object)s2==(object)s3);
+      
+      Что выведется в консоль?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>True, False, True, True</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>True, True, True, True</Text>
+      </li>
+      <li>
+        <Text>True, False, True, False</Text>
+      </li>
+      <li>
+        <Text>True, False, False, False</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.2</DefKey>
+    <Text>
+      public class A
+      {
+          public virtual void Print1()
+          {
+              Console.Write("A");
+          }
+          public void Print2()
+          {
+              Console.Write("A");
+          }
+      }
+      public class B: A
+      {
+          public override void Print1()
+          {
+              Console.Write("B");
+          }
+      }
+      public class C : B
+      {
+          new public void Print2()
+          {
+              Console.Write("C");
+          }
+      }
+      
+      Что выведется в консоль в результате вызова следующего кода?
+      var c = new C();
+      A a = c;
+
+      a.Print2();
+      a.Print1();
+      c.Print2();
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>ABC</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>CCC</Text>
+      </li>
+      <li>
+        <Text>ACC</Text>
+      </li>
+      <li>
+        <Text>AAC</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.3</DefKey>
+    <Text>
+      Является ли тип List потокбезопасной (thread-safe) коллекцией?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Не является ни в каком случае</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Только при операциях чтения</Text>
+      </li>
+      <li>
+        <Text>Только при операциях записи</Text>
+      </li>
+      <li>
+        <Text>Является во всех случаях</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.4</DefKey>
+    <Text>
+      В чем различие между операцией cast (приведения типов) и оператором as?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>В случае ошибки cast выбрасывает исключение InvalidCastException, а оператор as возвращает null</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Оператор "as" - это просто синтаксический сахар для "cast"</Text>
+      </li>
+      <li>
+        <Text>Cast изменяет диначеский тип, в то время как as изменяет статический тип</Text>
+      </li>
+      <li>
+        <Text>В случае ошибки cast возвращает null, а оператор as выбрасывает исключение InvalidCastException</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.5</DefKey>
+    <Text>
+      Какова алгоритмическая сложность для операций чтения и записи для коллекции Dictionary?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Чтение - О(1), запись - О(n)</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Чтение - О(n), запись - О(n)</Text>
+      </li>
+      <li>
+        <Text>Чтение - О(n), запись - О(1)</Text>
+      </li>
+      <li>
+        <Text>Чтение - О(1), запись - О(1)</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.6</DefKey>
+    <Text>
+      В чем различие между ключевыми словами "ref" и "out"?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Параметр с ключевым слово out может быть не инициализирован, а параметр с ключевым словом ref обязательно должен быть инииализирован до вызова метода, который использует эти параметры</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Параметр с ключевым слово ref может быть не инициализирован, а параметр с ключевым словом out обязательно должен быть инииализирован до вызова метода, который использует эти параметры</Text>
+      </li>
+      <li>
+        <Text>Ключевым слово ref может использоваться только со значимыми типами (value types), а out может использоваться как со значимыми, так и с ссылочными типами</Text>
+      </li>
+      <li>
+        <Text>Нет различий</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.7</DefKey>
+    <Text>
+      Чем отличаются друг от друга классы String и StringBuilder?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>StringBuilder позволяет проводить частые изменения над строками без ущерба производительности</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Тип String является immutable</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>String позволяет проводить частые изменения над строками без ущерба производительности</Text>
+      </li>
+      <li>
+        <Text>Тип StringBuilder является immutable</Text>
+      </li>
+      <li>
+        <Text>Нет различий</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.8</DefKey>
+    <Text>
+      Какие отличия между значимыми и ссылочными типами?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Ссылочные типы хранятся в куче</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Значимые типы хранятся в стеке</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Ссылочные типы хранятся в стеке</Text>
+      </li>
+      <li>
+        <Text>Значимые типы хранятся в куче</Text>
+      </li>
+      <li>
+        <Text>Нет различий</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.9</DefKey>
+    <Text>
+      Для чего используется инструкция Using в C#?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Инструкция using предоставляет удобный синтаксис, обеспечивающий правильное использование объектов IDisposable</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Using создает псевдоним для пространства имен или импортирует типы, определенные в других пространствах имен</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.10</DefKey>
+    <Text>
+      В чем основные отличия класса от структуры в языке C#?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Все классы наследуются от System.Object</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Все классы хранятся в куче</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Классы представляют ссылочный тип</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Все структуры наследуются от System.Object</Text>
+      </li>
+      <li>
+        <Text>Все структуры хранятся в куче</Text>
+      </li>
+      <li>
+        <Text>Структуры представляют ссылочный тип</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.11</DefKey>
+    <Text>
+      Как можно сравнить строки в C#?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>string.Equals(str1,str2)</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>string.Compare(str1,str2)</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>str1 == str2</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.12</DefKey>
+    <Text>
+      Что такое Свойства в C#?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Это специальные методы доступа к полям</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Разновидность переменных</Text>
+      </li>
+      <li>
+        <Text>Мета-данные класса</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.13</DefKey>
+    <Text>
+      Расшифруйте аббревиатуру GAC
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Global Assembly Cache</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Garbage Access Cache</Text>
+      </li>
+      <li>
+        <Text>Global Assembly Control</Text>
+      </li>
+      <li>
+        <Text>Garbage Assembly Cache</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.14</DefKey>
+    <Text>
+      Какие модификаторы доступа не существуют в C#?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>safe</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>external</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>public</Text>
+      </li>
+      <li>
+        <Text>private</Text>
+      </li>
+      <li>
+        <Text>internal</Text>
+      </li>
+      <li>
+        <Text>protected</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.15</DefKey>
+    <Text>
+      Допустим, у вас есть следующий код:
+      class Person
+      {
+      public object Id { get;}
+      public string Name { get;}
+      public Person(object id, string name)
+      {
+      Id = id;
+      Name = name;
+      }
+      }
+      Person tom = new Person(100, "Tom");
+
+      Выберите пункт, демонстрирующие распаковку (unboxing).
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>int tomId = (int)tom.Id;</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>int tomId = tom.Id;</Text>
+      </li>
+      <li>
+        <Text>object tomId = tom.Id;</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.16</DefKey>
+    <Text>
+      Какие типы нельзя использовать в предложении foreach?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Перечисления Enum</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Классы с интерфейсом IEnumerable</Text>
+      </li>
+      <li>
+        <Text>Коллекции</Text>
+      </li>
+      <li>
+        <Text>Массивы</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.17</DefKey>
+    <Text>
+      Чем отличается event от delegate?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Delegate - это ссылка на метод с определенной сигнатурой</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Event - особый вид многоадресного делегата</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Event можно использовать только из класса, где оно объявлено</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Event - это ссылка на метод с определенной сигнатурой</Text>
+      </li>
+      <li>
+        <Text>Delegate - особый вид многоадресного делегата</Text>
+      </li>
+      <li>
+        <Text>Delegate можно использовать только из класса, где оно объявлено</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.18</DefKey>
+    <Text>
+      В каком случае вы обязаны объявить класс абстрактным?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Когда у него не реализован один или больше методов</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Когда у него есть абстрактные поля</Text>
+      </li>
+      <li>
+        <Text>Когда у него нет классов-наследников</Text>
+      </li>
+      <li>
+        <Text>Когда он должен иметь лишь один экземпляр на всё приложение</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.19</DefKey>
+    <Text>
+      Назовите отличия между интерфейсом и абстрактным классом?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Абстрактный класс может иметь поля</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Абстрактный класс может иметь атрибуты и методы с разными модификаторами доступа</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Абстрактный класс может иметь экземпляр класса</Text>
+      </li>
+      <li>
+        <Text>Никаких отличий</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.20</DefKey>
+    <Text>
+      В чем разница между виртуальными и абстрактными методами?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Виртуальный метод может иметь базовую реализацию, а абстрактный нет</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Абстрактный метод может иметь базовую реализацию, а виртуальный нет</Text>
+      </li>
+      <li>
+        <Text>Никакой разницы</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.21</DefKey>
+    <Text>
+      Что означает модификатор virtual?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Метод может быть переопределен в дочернем классе</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Это переопределенный метод базового класса</Text>
+      </li>
+      <li>
+        <Text>Класс может быть иметь наследников</Text>
+      </li>
+      <li>
+        <Text>Для класса не может быть создан объект</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.22</DefKey>
+    <Text>
+      Рассматривая отличия частной и общей сборки, какие пункты относятся к термину частная сборка?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Видны только самому приложению</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Нет необходимости заботиться об уникальном имени во всем глобальном пространстве имен</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Не нужно делать записей в реестре при развертывании приложения</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Сборки просто копируются в директорию приложения или в подчинённую директорию</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Общая среда выполнения (CLR) при запуске приложения прочитает его манифест и определит какие сборки необходимы. Затем будет произведен поиск нужной сборки по директории приложения (процесс зондирования)</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Может быть использована сразу несколькими приложениями</Text>
+        <IsCorrectAnswer>False</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Сборка должна иметь строгое имя (strong name)</Text>
+        <IsCorrectAnswer>False</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Сборка должна быть помещена в общедоступное место – Global Assembly Cache (GAC, глобальный кэш сборок)</Text>
+        <IsCorrectAnswer>False</IsCorrectAnswer>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.23</DefKey>
+    <Text>
+      Рассматривая отличия частной и общей сборки, какие пункты относятся к термину общая сборка?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Видны только самому приложению</Text>
+        <IsCorrectAnswer>False</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Нет необходимости заботиться об уникальном имени во всем глобальном пространстве имен</Text>
+        <IsCorrectAnswer>False</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Не нужно делать записей в реестре при развертывании приложения</Text>
+        <IsCorrectAnswer>False</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Сборки просто копируются в директорию приложения или в подчинённую директорию</Text>
+        <IsCorrectAnswer>False</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Общая среда выполнения (CLR) при запуске приложения прочитает его манифест и определит какие сборки необходимы. Затем будет произведен поиск нужной сборки по директории приложения (процесс зондирования)</Text>
+        <IsCorrectAnswer>False</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Может быть использована сразу несколькими приложениями</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Сборка должна иметь строгое имя (strong name)</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Сборка должна быть помещена в общедоступное место – Global Assembly Cache (GAC, глобальный кэш сборок)</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.24</DefKey>
+    <Text>
+      Что такое MVVM?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Model-View-ViewModel</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Microsoft Virtual - Visual Management</Text>
+      </li>
+      <li>
+        <Text>Model Visual Virtual-Machine</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.25</DefKey>
+    <Text>
+      Когда использовать StringBuilder предпочтительнее, чем string?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Если строка часто изменяется</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Если строка редко изменяется</Text>
+      </li>
+      <li>
+        <Text>Если строка содержит спецсимволы</Text>
+      </li>
+      <li>
+        <Text>Если строка содержит исключительно цифры</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.26</DefKey>
+    <Text>
+      Какой уровень доступа имеют поля класса, если модификатор доступа не указан?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>private</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>protected</Text>
+      </li>
+      <li>
+        <Text>internal</Text>
+      </li>
+      <li>
+        <Text>protected internal</Text>
+      </li>
+      <li>
+        <Text>public</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.27</DefKey>
+    <Text>
+      Каким образом можно присвоить значения полям, которые помечены ключевым словом readonly?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Из конструктора, либо в месте объявления поля, приравнивая ему какое-то значение</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>С помощью атрибута DefaultValueAttribute</Text>
+      </li>
+      <li>
+        <Text>В любое время из любого метода, который содержится в том же классе, что и поле</Text>
+      </li>
+      <li>
+        <Text>Можно присвоить значение из любого места в коде, но только один раз</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.28</DefKey>
+    <Text>
+      Какая из перечисленных операций LINQ исключает дублирование одинаковых элементов в выходной последовательности?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Distinct()</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>First()</Text>
+      </li>
+      <li>
+        <Text>Zip()</Text>
+      </li>
+      <li>
+        <Text>Any()</Text>
+      </li>
+      <li>
+        <Text>Single()</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.29</DefKey>
+    <Text>
+      С помощью какого ключевого слова осуществляется блокировка одновременного выполнения определенных участков кода несколькими потоками?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>lock</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>private</Text>
+      </li>
+      <li>
+        <Text>checked</Text>
+      </li>
+      <li>
+        <Text>internal</Text>
+      </li>
+      <li>
+        <Text>safe</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.30</DefKey>
+    <Text>
+      Когда вызывается статический конструктор класса?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Один раз при первом создании экземпляра класса или при первом обращении к статическим членам класса</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>После каждого обращения к статическим полям, методам и свойствам</Text>
+      </li>
+      <li>
+        <Text>Строгий порядок вызова неопределен</Text>
+      </li>
+      <li>
+        <Text>Статических конструкторов нет</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.31</DefKey>
+    <Text>
+      Чем отличаются константы и поля, доступные только для чтения?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Контанты инициализируются только во время компиляции, а поля, доступные для чтения, могут инициализироваться во время выполнения в конструкторе</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Поля, доступные для чтения, инициализируются только во время компиляции, а константы могут инициализироваться во время выполнения в конструкторе</Text>
+      </li>
+      <li>
+        <Text>Константы можно изменять, а доступные только для чтения поля нет</Text>
+      </li>
+      <li>
+        <Text>Ничем не отличаются</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.32</DefKey>
+    <Text>
+      Кому доступны переменные с модификатором protected на уровне класса?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Любому классу-наследнику</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Любому классу</Text>
+      </li>
+      <li>
+        <Text>Никому, кроме этого класса</Text>
+      </li>
+      <li>
+        <Text>Родителю этого класса</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.33</DefKey>
+    <Text>
+      Когда объект удаляется сборщиком мусора?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Когда на него не остается ссылок</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Когда на него остается мало ссылок</Text>
+      </li>
+      <li>
+        <Text>Спустя некоторое время после создания объекта</Text>
+      </li>
+      <li>
+        <Text>Никогда</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.Picking.34</DefKey>
+    <Text>
+      Выберите пункты, входящие в состав аббревиатуры ООП
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Программирование</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Объектно</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Ориентированное</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Осознанно</Text>
+      </li>
+      <li>
+        <Text>Определенное</Text>
+      </li>
+      <li>
+        <Text>Проектирование</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+  
+</Content>

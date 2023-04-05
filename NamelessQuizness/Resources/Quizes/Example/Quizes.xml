@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content>
+  
+  <FriendlyQuizDef>
+    <DefKey>Quiz.DotNet</DefKey>
+    <Title>Викторина с вопросами к собеседованию .NET</Title>
+    <Greet>Привет! Эта викторина предназначена для тех, кто хочет освежить свои знания в .NET\n\nНажмите любую клавишу для продолжения...</Greet>
+    <AfterQuestionMessage>Переходим к следующему вопросу! Осталось вопросов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</AfterQuestionMessage>
+    <VictoryMessage>Поздравляем, вы прошли эту викторину! Правильных ответов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</VictoryMessage>
+    <DefeatMessage>Вы молодец, что прошли викторину! К сожалению, вы не ответили на все вопросы. Правильных ответов: {1} из {2}\n\nНеправильные ответы:\n{0}\nНажмите любую клавишу для продолжения...</DefeatMessage>
+    <QuestionsList>QuestionsList.DotNet</QuestionsList>
+    <QuizProcessor>FriendlyQuizProcessor</QuizProcessor>
+    <QuizRenderer>FormattedConsoleQuizRenderer</QuizRenderer>
+  </FriendlyQuizDef>
+  
+  <FriendlyQuizDef>
+    <DefKey>Quiz.AspDotNetWithDotNet</DefKey>
+    <Title>Викторина с вопросами к собеседованию .NET и ASP.NET Core</Title>
+    <Greet>Привет! Эта викторина предназначена для тех, кто хочет освежить свои знания в .NET и ASP.NET Core\n\nНажмите любую клавишу для продолжения...</Greet>
+    <AfterQuestionMessage>Переходим к следующему вопросу! Осталось вопросов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</AfterQuestionMessage>
+    <VictoryMessage>Поздравляем, вы прошли эту викторину! Правильных ответов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</VictoryMessage>
+    <DefeatMessage>Вы молодец, что прошли викторину! К сожалению, вы не ответили на все вопросы. Правильных ответов: {1} из {2}\n\nНеправильные ответы:\n{0}\nНажмите любую клавишу для продолжения...</DefeatMessage>
+    <QuestionsList>QuestionsList.AspDotNet</QuestionsList>
+    <QuizProcessor>FriendlyQuizProcessor</QuizProcessor>
+    <QuizRenderer>FormattedConsoleQuizRenderer</QuizRenderer>
+  </FriendlyQuizDef>
+
+  <FriendlyQuizDef>
+    <DefKey>Quiz.DotNetTyping</DefKey>
+    <Title>Викторина с вопросами про .NET (набор ответов клавиатурой)</Title>
+    <Greet>Привет! Эта викторина предназначена для тех, кто хочет освежить свои знания в .NET\n\nНажмите любую клавишу для продолжения...</Greet>
+    <AfterQuestionMessage>Переходим к следующему вопросу! Осталось вопросов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</AfterQuestionMessage>
+    <VictoryMessage>Поздравляем, вы прошли эту викторину! Правильных ответов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</VictoryMessage>
+    <DefeatMessage>Вы молодец, что прошли викторину! К сожалению, вы не ответили на все вопросы. Правильных ответов: {1} из {2}\n\nНеправильные ответы:\n{0}\nНажмите любую клавишу для продолжения...</DefeatMessage>
+    <QuestionsList>QuestionsList.DotNet.Typing</QuestionsList>
+    <QuizProcessor>FriendlyQuizProcessor</QuizProcessor>
+    <QuizRenderer>FormattedConsoleQuizRenderer</QuizRenderer>
+  </FriendlyQuizDef>
+  
+  <FriendlyQuizDef>
+    <DefKey>Quiz.DotNetPicking</DefKey>
+    <Title>Викторина с вопросами про .NET (с выбором номера ответа)</Title>
+    <Greet>Привет! Эта викторина предназначена для тех, кто хочет освежить свои знания в .NET\n\nНажмите любую клавишу для продолжения...</Greet>
+    <AfterQuestionMessage>Переходим к следующему вопросу! Осталось вопросов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</AfterQuestionMessage>
+    <VictoryMessage>Поздравляем, вы прошли эту викторину! Правильных ответов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</VictoryMessage>
+    <DefeatMessage>Вы молодец, что прошли викторину! К сожалению, вы не ответили на все вопросы. Правильных ответов: {1} из {2}\n\nНеправильные ответы:\n{0}\nНажмите любую клавишу для продолжения...</DefeatMessage>
+    <QuestionsList>QuestionsList.DotNet.Picking</QuestionsList>
+    <QuizProcessor>FriendlyQuizProcessor</QuizProcessor>
+    <QuizRenderer>FormattedConsoleQuizRenderer</QuizRenderer>
+  </FriendlyQuizDef>
+  
+  <FriendlyQuizDef>
+    <DefKey>Quiz.DotNetGaps</DefKey>
+    <Title>Викторина с вопросами про .NET (заполнение пробелов)</Title>
+    <Greet>Привет! Эта викторина предназначена для тех, кто хочет освежить свои знания в .NET\n\nНажмите любую клавишу для продолжения...</Greet>
+    <AfterQuestionMessage>Переходим к следующему вопросу! Осталось вопросов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</AfterQuestionMessage>
+    <VictoryMessage>Поздравляем, вы прошли эту викторину! Правильных ответов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</VictoryMessage>
+    <DefeatMessage>Вы молодец, что прошли викторину! К сожалению, вы не ответили на все вопросы. Правильных ответов: {1} из {2}\n\nНеправильные ответы:\n{0}\nНажмите любую клавишу для продолжения...</DefeatMessage>
+    <QuestionsList>QuestionsList.DotNet.Gaps</QuestionsList>
+    <QuizProcessor>FriendlyQuizProcessor</QuizProcessor>
+    <QuizRenderer>FormattedConsoleQuizRenderer</QuizRenderer>
+  </FriendlyQuizDef>
+
+  <FriendlyQuizDef>
+    <DefKey>Quiz.Patterns</DefKey>
+    <Title>Викторина с вопросами по паттернам проектирования (заполнение пробелов)</Title>
+    <Greet>Привет! Эта викторина предназначена для тех, кто хочет освежить свои знания паттернов проектирования\n\nНажмите любую клавишу для продолжения...</Greet>
+    <AfterQuestionMessage>Переходим к следующему вопросу! Осталось вопросов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</AfterQuestionMessage>
+    <VictoryMessage>Поздравляем, вы прошли эту викторину! Правильных ответов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</VictoryMessage>
+    <DefeatMessage>Вы молодец, что прошли викторину! К сожалению, вы не ответили на все вопросы. Правильных ответов: {1} из {2}\n\nНеправильные ответы:\n{0}\nНажмите любую клавишу для продолжения...</DefeatMessage>
+    <QuestionsList>QuestionsList.Patterns</QuestionsList>
+    <QuizProcessor>FriendlyQuizProcessor</QuizProcessor>
+    <QuizRenderer>FormattedConsoleQuizRenderer</QuizRenderer>
+  </FriendlyQuizDef>
+  
+  <FriendlyQuizDef>
+    <DefKey>Quiz.AspNetCore</DefKey>
+    <Title>Викторина с вопросами про ASP.NET Core</Title>
+    <Greet>Привет! Эта викторина предназначена для тех, кто хочет освежить свои знания в ASP.NET Core\n\nНажмите любую клавишу для продолжения...</Greet>
+    <AfterQuestionMessage>Переходим к следующему вопросу! Осталось вопросов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</AfterQuestionMessage>
+    <VictoryMessage>Поздравляем, вы прошли эту викторину! Правильных ответов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</VictoryMessage>
+    <DefeatMessage>Вы молодец, что прошли викторину! К сожалению, вы не ответили на все вопросы. Правильных ответов: {1} из {2}\n\nНеправильные ответы:\n{0}\nНажмите любую клавишу для продолжения...</DefeatMessage>
+    <QuestionsList>QuestionsList.AspDotNet</QuestionsList>
+    <QuizProcessor>FriendlyQuizProcessor</QuizProcessor>
+    <QuizRenderer>FormattedConsoleQuizRenderer</QuizRenderer>
+  </FriendlyQuizDef>
+
+  <FriendlyQuizDef>
+    <DefKey>Quiz.Sql</DefKey>
+    <Title>Викторина с вопросами про SQL</Title>
+    <Greet>Привет! Эта викторина предназначена для тех, кто хочет освежить свои знания в SQL\n\nНажмите любую клавишу для продолжения...</Greet>
+    <AfterQuestionMessage>Переходим к следующему вопросу! Осталось вопросов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</AfterQuestionMessage>
+    <VictoryMessage>Поздравляем, вы прошли эту викторину! Правильных ответов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</VictoryMessage>
+    <DefeatMessage>Вы молодец, что прошли викторину! К сожалению, вы не ответили на все вопросы. Правильных ответов: {1} из {2}\n\nНеправильные ответы:\n{0}\nНажмите любую клавишу для продолжения...</DefeatMessage>
+    <QuestionsList>QuestionsList.SQL</QuestionsList>
+    <QuizProcessor>FriendlyQuizProcessor</QuizProcessor>
+    <QuizRenderer>FormattedConsoleQuizRenderer</QuizRenderer>
+  </FriendlyQuizDef>
+  
+  <FriendlyQuizDef>
+    <DefKey>Quiz.TotalQuizness</DefKey>
+    <Title>All-in-One викторина к собеседованию по всем темам</Title>
+    <Greet>Привет! Эта викторина предназначена для тех, кто хочет освежить свои знания\n\nНажмите любую клавишу для продолжения...</Greet>
+    <AfterQuestionMessage>Переходим к следующему вопросу! Осталось вопросов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</AfterQuestionMessage>
+    <VictoryMessage>Поздравляем, вы прошли эту викторину! Правильных ответов: {0} из {1}\n\nНажмите любую клавишу для продолжения...</VictoryMessage>
+    <DefeatMessage>Вы молодец, что прошли викторину! К сожалению, вы не ответили на все вопросы. Правильных ответов: {1} из {2}\n\nНеправильные ответы:\n{0}\nНажмите любую клавишу для продолжения...</DefeatMessage>
+    <QuestionsList>QuestionsList.TotalQuizness</QuestionsList>
+    <QuizProcessor>FriendlyQuizProcessor</QuizProcessor>
+    <QuizRenderer>FormattedConsoleQuizRenderer</QuizRenderer>
+  </FriendlyQuizDef>
+  
+</Content>

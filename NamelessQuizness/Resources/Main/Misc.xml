@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content>
+  
+  <MessageDef>
+    <DefKey>Answer.MayContains</DefKey>
+    <Text>\nВосстановите слова в пробелах в правильном порядке.\nОтвет может содержать следующие слова: {0}</Text>
+  </MessageDef>
+  
+  <MessageDef>
+    <DefKey>Answer.Typing</DefKey>
+    <Text>Напишите ответ</Text>
+  </MessageDef>
+  
+  <MessageDef>
+    <DefKey>Answer.Binary</DefKey>
+    <Text>Да/Нет</Text>
+  </MessageDef>
+  
+  <MessageDef>
+    <DefKey>Answer.NumberSelection</DefKey>
+    <Text>Номер ответа</Text>
+  </MessageDef>
+  
+  <MessageDef>
+    <DefKey>Answer.ManyNumberSelection</DefKey>
+    <Text>Номера ответов через запятую</Text>
+  </MessageDef>
+  
+  <MessageDef>
+    <DefKey>Answer.ManyTyping</DefKey>
+    <Text>Напишите ответы через запятую</Text>
+  </MessageDef>
+  
+</Content>

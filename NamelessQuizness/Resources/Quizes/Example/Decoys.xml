@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content>
+  
+  <DecoysListDef>
+    <DefKey>Decoys.DotNetWords</DefKey>
+    <Words>
+      <li>абстракция</li>
+      <li>инкапсуляция</li>
+      <li>полиморфизм</li>
+      <li>наследование</li>
+      <li>объектно</li>
+      <li>ориентированный</li>
+      <li>ориентированное</li>
+      <li>программирование</li>
+      <li>программа</li>
+      <li>dispose</li>
+      <li>finalize</li>
+      <li>assembly</li>
+      <li>сборка</li>
+      <li>объекты</li>
+      <li>класс</li>
+      <li>классы</li>
+      <li>неявный</li>
+      <li>используемый</li>
+      <li>компонент</li>
+      <li>обеспечивает</li>
+      <li>контроль</li>
+      <li>ресурсы</li>
+      <li>сборщик</li>
+      <li>мусор</li>
+      <li>предложение</li>
+      <li>спецификация</li>
+      <li>концепция</li>
+      <li>шаблон</li>
+      <li>интегрированный</li>
+      <li>паттерн</li>
+      <li>анти-паттерн</li>
+    </Words>
+  </DecoysListDef>
+  
+  <DecoysListDef>
+    <DefKey>Decoys.AspNetWords</DefKey>
+    <Words>
+      <li>HTTP-ответ</li>
+      <li>HTTP-запрос</li>
+      <li>middleware</li>
+      <li>pipeline</li>
+      <li>Lifetime</li>
+      <li>сервис</li>
+      <li>Transient</li>
+      <li>Scoped</li>
+      <li>Singleton</li>
+      <li>Content-Generating</li>
+      <li>Short-Circuiting</li>
+      <li>Request-Editing</li>
+      <li>Response-Editing</li>
+      <li>запрос</li>
+      <li>ответ</li>
+      <li>конвейер</li>
+    </Words>
+  </DecoysListDef>
+  
+  <DecoysListDef>
+    <DefKey>Decoys.SqlWords</DefKey>
+    <Words>
+      <li>ответ</li>
+      <li>запрос</li>
+      <li>query</li>
+      <li>language</li>
+      <li>definition</li>
+      <li>manipulation</li>
+      <li>data</li>
+      <li>control</li>
+      <li>transaction</li>
+    </Words>
+  </DecoysListDef>
+  
+  <SummaryDecoysListDef>
+    <DefKey>Decoys.AspNetWithDotNetWords</DefKey>
+    <BaseLists>
+      <li>Decoys.AspNetWords</li>
+      <li>Decoys.DotNetWords</li>
+    </BaseLists>
+  </SummaryDecoysListDef>
+  
+</Content>

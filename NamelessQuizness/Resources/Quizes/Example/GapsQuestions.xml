@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content>
+  
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Gaps.1</DefKey>
+    <Text>
+      Dependency Injection (DI) - контейнер внедрения зависимостей — это объект, который знает, как создать и настроить экземпляр класса и зависимых от него объектов.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+  
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Gaps.2</DefKey>
+    <Text>
+      NET Framework — это технология, которая поддерживает создание и выполнение веб-служб и приложений Windows.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+  
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Gaps.3</DefKey>
+    <Text>
+      Управляемый код (managed code) — термин, введённый фирмой Microsoft, для обозначения кода программы, исполняемой под управлением виртуальной машины .NET — Common Language Runtime или Mono. При этом машинный код называется неуправляемым кодом (unmanaged code).
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Gaps.4</DefKey>
+    <Text>
+      Dispose - обеспечивает явный контроль над ресурсами, используемыми объектом, а Finalize - неявный, используемый сборщиком мусора.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Gaps.5</DefKey>
+    <Text>
+      Аспектно-ориентированное программирование базируется на изучении того сколько и каких частей требуется для взаимодействия с системой. Основным для АОП является взаимодействие этих элементов.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Gaps.6</DefKey>
+    <Text>
+      Интерфейсно-ориентированное программирование это подход основанный на программировании по контракту. Ни одна часть интерфейса не зависит от того как реализована другая, вся коммуникация между ними описана в контракте. Веб-сервисы на основе WSDL наиболее известный пример этого подхода.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Gaps.7</DefKey>
+    <Text>
+      Объектно-ориентированное программирование основывается на понятиях абстракции, инкапсуляции, полиморфизма и наследования. Классы реализуют эти концепции для построения объектов, контролирующих или реализующих систему. Программа при этом рассматривается как набор объектов, взаимодействующих друг с другом.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Gaps.8</DefKey>
+    <Text>
+      Абстракция - это понятие, подразумевающее введение дополнительного слоя между компонентами системы, для того чтоб один объект не зависел от того, как другой реализует свои бизнес-правила, тем самым уменьшая их сцепленность.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Gaps.9</DefKey>
+    <Text>
+      Инкапсуляция - это понятие, означающее разделение классов на части: интерфейс и реализацию. В .NET чаще всего рассматривается вместе с понятием сокрытия, подразумевающим скрытие деталей реализации класса от вызывающих его.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Gaps.10</DefKey>
+    <Text>
+      Наследование позволяет базовым классам содержать общую функциональность и передавать ее всем своим классам-потомкам.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Gaps.11</DefKey>
+    <Text>
+      Полиморфизм - это понятие, подразумеющее способность класса иметь различные реализации однотипных действий. Полиморфизм позволяет писать более абстрактные, расширяемые программы.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Gaps.12</DefKey>
+    <Text>
+      Абстрактный метод – это метод, который должен быть реализован в классе-наследнике. При этом, абстрактный метод не может иметь своей реализации в базовом классе, в отличии от виртуального.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Gaps.13</DefKey>
+    <Text>
+      Виртуальный метод – это метод, который может быть переопределен в классе-наследнике. Такой метод может иметь стандартную реализацию в базовом классе.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Gaps.14</DefKey>
+    <Text>
+      Переопределение метода – это изменение реализации метода, установленного как виртуальный (в классе наследнике метод будет работать отлично от базового класса).
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+  
+</Content>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Patterns.1</DefKey>
+    <Text>
+      Порождающие паттерны — это паттерны, которые абстрагируют процесс порождения классов и объектов.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+  
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Patterns.2</DefKey>
+    <Text>
+      Структурные паттерны - это паттерны, образующие более крупные структуры, более сложные по характеру классы и объекты.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.Patterns.3</DefKey>
+    <Text>
+      Поведенческие паттерны - это паттерны, определяющие алгоритмы и взаимодействия между классами и объектами, их поведение.
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.DotNetWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+  
+</Content>

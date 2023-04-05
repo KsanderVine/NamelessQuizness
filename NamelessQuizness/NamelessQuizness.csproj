@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <StartupObject>NamelessQuizness.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Decoys.xml" />
+    <None Remove="Resources\Main\Decoys.xml" />
+    <None Remove="Resources\Main\Errors.xml" />
+    <None Remove="Resources\Messages.xml" />
+    <None Remove="Resources\Questions.xml" />
+    <None Remove="Resources\Quiz.xml" />
+    <None Remove="Resources\Quizes\Example\AspDotNetQuestions.xml" />
+    <None Remove="Resources\Quizes\Example\PatternsQuestions.xml" />
+    <None Remove="Resources\Quizes\Example\QuestionsLists.xml" />
+    <None Remove="Resources\Quizes\Example\SqlQuestions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Quizes\Example\SqlQuestions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Quizes\Example\Decoys.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Quizes\Example\PatternsQuestions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Quizes\Example\QuestionsLists.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Quizes\Example\Quizes.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Quizes\Example\GapsQuestions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Quizes\Example\PickingQuestions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Quizes\Example\AspDotNetQuestions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Quizes\Example\TypingQuestions.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Main\Errors.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Main\Game.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Main\Misc.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

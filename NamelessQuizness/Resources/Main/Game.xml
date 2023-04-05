@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content>
+  
+  <ConsoleQuizGameDef>
+    <DefKey>ConsoleQuizGameConfiguration</DefKey>
+    <Title>Nameless Quizness</Title>
+    <ExitWord>ВЫХОД</ExitWord>
+    <QuizGame>ConsoleQuizGame</QuizGame>
+    <GameRenderer>FormattedConsoleQuizRenderer</GameRenderer>
+    <MainMenuText>Список викторин:\n{0}</MainMenuText>
+    <QuizInputText>Номер викторины или "{0}" для завершения программы</QuizInputText>
+  </ConsoleQuizGameDef>
+  
+</Content>

@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content>
+
+  <PickingQuestionDef>
+    <DefKey>Question.SQL.1</DefKey>
+    <Text>
+      Что такое первичный ключ (PRIMARY KEY)?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>PRIMARY KEY - предназначен для однозначной идентификации каждой записи в таблице и является строго уникальным</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>PRIMARY KEY - предназначен для временной идентификации новой строки при её первичной обработке</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+  
+  <TypingQuestionDef>
+    <DefKey>Question.SQL.2</DefKey>
+    <Text>Напишите название хотя бы одной реляционной СУБД</Text>
+    <InputMessage>Answer.Typing</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>MS SQL Server</li>
+      <li>SQL Server</li>
+      <li>MS SQL</li>
+      <li>My SQL</li>
+      <li>PostgreSQL</li>
+      <li>Oracle</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.SQL.3</DefKey>
+    <Text>
+      Когда используется первичный ключ (PRIMARY KEY)?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>PRIMARY KEY — это первичный ключ, который используется в качестве основного ключа и может быть использован для связи с дочерней таблицей, содержащей внешний ключ</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>PRIMARY KEY - это временный ключ, который может быть использован и в качестве основного ключа</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+
+  <PickingQuestionDef>
+    <DefKey>Question.SQL.4</DefKey>
+    <Text>
+      Что такое внешний ключ (FOREIGN KEY)?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>FOREIGN KEY является атрибутом ограничения и обеспечивает связь двух таблиц</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>FOREIGN KEY ключ для поиска первичного ключа в СУБД</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.SQL.5</DefKey>
+    <Text>
+      Какие ограничения вы знаете?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>UNIQUE — гарантирует уникальность значений в столбце</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>NOT NULL — значение не может быть NULL</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>INDEX — создаёт индексы в таблице для быстрого поиска/запросов</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>CHECK — значения столбца должны соответствовать заданным условиям</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>DEFAULT — предоставляет столбцу значения по умолчанию</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>DELEGATE - используется для связи с другой таблицей</Text>
+      </li>
+      <li>
+        <Text>EVENT - реагирует на изменения в таблице в виде сообщений для пользователя</Text>
+      </li>
+      <li>
+        <Text>NULL - значение должно быть NULL</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.SQL.6</DefKey>
+    <Text>
+      Для чего используется ключевое слово ORDER BY?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Для сортировки данных в порядке возрастания или убывания</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Для назначения порядкового номера выводимым записям</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.SQL.7</DefKey>
+    <Text>
+      Назовите основные типы соединений в SQL?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>INNER JOIN</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>FULL OUTER JOIN</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>LEFT JOIN</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>RIGHT JOIN </Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>MIDDLE JOIN</Text>
+      </li>
+      <li>
+        <Text>LESS JOIN</Text>
+      </li>
+      <li>
+        <Text>MAX JOIN</Text>
+      </li>
+      <li>
+        <Text>JOIN BY</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <TypingQuestionDef>
+    <DefKey>Question.SQL.8</DefKey>
+    <Text>
+      Верно ли утверждение?
+      Оператор UNION используется для объединения полученных данных из двух или более запросов, которые должны иметь одинаковое количество столбцов с одинаковыми типами данных и расположенных в том же порядке.
+    </Text>
+    <InputMessage>Answer.Binary</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>Да</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.SQL.9</DefKey>
+    <Text>
+      Что такое подстановочные знаки?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Это специальные символы, которые нужны для замены каких-либо знаков в запросе</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Это специальные команды, заменяющие фрагменты данных в таблице</Text>
+      </li>
+      <li>
+        <Text>Это специальные символы, часть регулярных выражений</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.SQL.10</DefKey>
+    <Text>
+      Какими бывают подстановочные знаки?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>% - заменить ноль или более символов</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>_ - заменить один символ</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>* - заменить целое слово</Text>
+      </li>
+      <li>
+        <Text>! - заменить цифру</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.SQL.11</DefKey>
+    <Text>
+      Что делают псевдонимы Aliases?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>SQL-псевдонимы нужны для того, чтобы дать временное имя таблице или столбцу</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>SQL-псевдонимы нужны для того, чтобы дать альтернативное имя таблице</Text>
+      </li>
+      <li>
+        <Text>SQL-псевдонимы нужны для того, чтобы создавать виртуальные таблицы</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+  
+  <PickingQuestionDef>
+    <DefKey>Question.SQL.12</DefKey>
+    <Text>
+      Для чего нужен оператор INSERT INTO SELECT?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Данный оператор копирует данные из одной таблицы и вставляет их в другую, при этом типы данных в обеих таблицах должны соответствовать</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Данный оператор вставляет новые данные в таблицу и выбирает их вторым запросом</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <TypingQuestionDef>
+    <DefKey>Question.SQL.13</DefKey>
+    <Text>
+      Верно ли утверждение?
+      Нормализация отношений в SQL призвана организовать информацию в базе данных таким образом, чтобы она не занимала много места и с ней было удобно работать. Это удаление избыточных данных, устранение дублей, идентификация наборов связанных данных через PRIMARY KEY, etc.
+    </Text>
+    <InputMessage>Answer.Binary</InputMessage>
+    <QuestionWorker>TypingQuestionWorker</QuestionWorker>
+    <AcceptedAnswers>
+      <li>Да</li>
+    </AcceptedAnswers>
+  </TypingQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.SQL.14</DefKey>
+    <Text>
+      Structured Query Language (SQL) — язык структурированных запросов, с помощью него пишутся специальные запросы (SQL инструкции) к базе данных с целью получения этих данных из базы и для манипулирования этими данными
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.SqlWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+  
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.SQL.15</DefKey>
+    <Text>
+      Data Definition Language (DDL) – это группа операторов определения данных. Другими словами, с помощью операторов, входящих в эту группы, мы определяем структуру базы данных и работаем с объектами этой базы, т.е. создаем, изменяем и удаляем их
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.SqlWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.SQL.16</DefKey>
+    <Text>
+      Data Manipulation Language (DML) – это группа операторов для манипуляции данными. С помощью этих операторов мы можем добавлять, изменять, удалять и выгружать данные из базы, т.е. манипулировать ими
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.SqlWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.SQL.17</DefKey>
+    <Text>
+      Data Control Language (DCL) – группа операторов определения доступа к данным. Иными словами, это операторы для управления разрешениями, с помощью них мы можем разрешать или запрещать выполнение определенных операций над объектами базы данных
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.SqlWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <FillTheGapsQuestionDef>
+    <DefKey>Question.SQL.18</DefKey>
+    <Text>
+      Transaction Control Language (TCL) – группа операторов для управления транзакциями. Транзакция – это команда или блок команд (инструкций), которые успешно завершаются как единое целое, при этом в базе данных все внесенные изменения фиксируются на постоянной основе или отменяются, т.е. все изменения, внесенные любой командой, входящей в транзакцию, будут отменены
+    </Text>
+    <GapsCount>3</GapsCount>
+    <DecoysCount>4</DecoysCount>
+    <DecoysListDef>Decoys.SqlWords</DecoysListDef>
+    <InputMessage>Answer.ManyTyping</InputMessage>
+    <ConditionMessage>Answer.MayContains</ConditionMessage>
+  </FillTheGapsQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.SQL.19</DefKey>
+    <Text>
+      Какие из следующих утверждений об операторах верны?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>SELECT – осуществляет выборку данных</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>INSERT – добавляет новые данные</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>UPDATE – вызывает обновление СУБД</Text>
+      </li>
+      <li>
+        <Text>DELETE – удаляет данные</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.SQL.20</DefKey>
+    <Text>
+      Какие из следующих утверждений об операторах верны?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>CREATE – используется для создания объектов базы данных</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>ALTER – используется для изменения объектов базы данных</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>DROP – очищает последние логи</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.SQL.21</DefKey>
+    <Text>
+      В чем разница между между командами DELETE и TRUNCATE?
+    </Text>
+    <InputMessage>Answer.ManyNumberSelection</InputMessage>
+    <QuestionWorker>PickingManyQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Команда DELETE может быть отменена</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Команда DELETE это DML-операция</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Команда TRUNCATE может быть отменена</Text>
+      </li>
+      <li>
+        <Text>Команда TRUNCATE это DML-операция</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef>
+
+  <PickingQuestionDef>
+    <DefKey>Question.SQL.22</DefKey>
+    <Text>
+      Что такое Self JOIN?
+    </Text>
+    <InputMessage>Answer.NumberSelection</InputMessage>
+    <QuestionWorker>PickingQuestionWorker</QuestionWorker>
+    <Answers>
+      <li>
+        <Text>Выражение, использующееся для того, чтобы таблица объединялась сама с собой</Text>
+        <IsCorrectAnswer>True</IsCorrectAnswer>
+      </li>
+      <li>
+        <Text>Инструкция для СУБД для добавления в таблицу новых записей</Text>
+      </li>
+    </Answers>
+  </PickingQuestionDef> 
+
+</Content>
